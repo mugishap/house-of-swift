@@ -6,9 +6,10 @@ for i:Int in 0..<count{
     print("\(i+1). \(operators[i])")
 }
 
-chosenOperator = readLine()
-print("\(chosenOperator as String?)")
+chosenOperator = readLine(strippingNewline: true)
+print("You chose \(chosenOperator)")
 
+print(chosenOperator == "1")
 
 func add(num1:Int,num2:Int)->Int{
     return num1 + num2
@@ -17,11 +18,11 @@ func add(num1:Int,num2:Int)->Int{
 func subtract(num1:Int,num2:Int)->Int{
     return num1 - num2
 }
+
 func divide(num1:Int,num2:Int)->Int{
     return num1 / num2
 }
+
 func multiply(num1:Int,num2:Int)->Int{
     return num1 * num2
 }
-
-print(add(num1: 1,num2: 2))
