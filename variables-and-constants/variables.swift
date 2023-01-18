@@ -11,7 +11,7 @@ var input: String? = readLine();
 //Constant decalration
 let ourConstant:String = "Constant here"
 
-print("This is what you entered => \(input)")
+print("This is what you entered => \(input)") --> //This way of printing strings is called string interpolation
 
 //Some more explanation below
 

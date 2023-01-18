@@ -7,9 +7,31 @@ for i:Int in 0..<count{
 }
 
 chosenOperator = readLine(strippingNewline: true)
-print("You chose \(chosenOperator)")
 
-print(chosenOperator == "1")
+print("You chose \(chosenOperator ?? "nothing")")
+
+var unwrappedOperator: String = chosenOperator ?? "5"
+
+print("Enter first number: ")
+var num1 = readLine()
+print("Enter second number: ")
+var num2 = readLine()
+
+
+
+switch unwrappedOperator {
+case "1":
+    print("Add")
+case "2":
+    print("Multiplication")
+case "3":
+    print("Division")
+case "4":
+    print("Subtraction")
+default:
+    print("No chosen operator found")
+}
+
 
 func add(num1:Int,num2:Int)->Int{
     return num1 + num2
